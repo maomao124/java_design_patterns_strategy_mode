@@ -15,5 +15,34 @@ package mao.t2;
 
 public class Test
 {
+    public static void main(String[] args)
+    {
+        {
+            Context context = new Context(new OperationAdd());
+            System.out.println(context.executeStrategy(3, 8));
+            System.out.println(context.executeStrategy(45, 4));
+            System.out.println(context.executeStrategy(40, 20));
+        }
 
+        {
+            Context context = new Context(new OperationSubtract());
+            System.out.println(context.executeStrategy(3, 8));
+            System.out.println(context.executeStrategy(45, 4));
+            System.out.println(context.executeStrategy(40, 20));
+        }
+
+        {
+            Context context = new Context(new OperationMultiply());
+            System.out.println(context.executeStrategy(3, 8));
+            System.out.println(context.executeStrategy(45, 4));
+            System.out.println(context.executeStrategy(40, 20));
+        }
+
+        {
+            Context context = new Context(new OperationDivision());
+            System.out.println(context.executeStrategy(3, 8));
+            System.out.println(context.executeStrategy(45, 4));
+            System.out.println(context.executeStrategy(40, 20));
+        }
+    }
 }
